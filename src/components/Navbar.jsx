@@ -20,8 +20,12 @@ const Navbar = () => {
         },
         {
             id: 4,
-            link: "Contact"
+            link: "Experience"
         },
+        {
+            id: 5,
+            link: "Contact"
+        }
     ]
 
   return (
