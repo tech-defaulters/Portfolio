@@ -1,7 +1,7 @@
-import gym from "../images/gym.png";
-import cricket from "../images/cricket.png";
-import school from "../images/education.png";
-import shop from "../images/store.png";
+import gym from "../images/MyGym.png";
+import netflix from "../images/Netflix.png";
+import simongame from "../images/SimonGame.png";
+import magicmatch from "../images/MagicMatch.png";
 
 const Portfolio = () => {
 
@@ -9,22 +9,26 @@ const Portfolio = () => {
         {
             id: 1,
             src: gym,
-            alt: "gym website"
+            alt: "Gym Website",
+            web: "https://hootingsailor.github.io/gym-website/"
         },
         {
             id: 2,
-            src: cricket,
-            alt: "cricket academy website"
+            src: netflix,
+            alt: "Netflix Clone",
+            web: "https://netflix-2ec4d.firebaseapp.com/"
         },
         {
             id: 3,
-            src: school,
-            alt: "schol website"
+            src: simongame,
+            alt: "Simon Game",
+            web: "https://hootingsailor.github.io/SimonGame/"
         },
         {
             id: 4,
-            src: shop,
-            alt: "shop website"
+            src: magicmatch,
+            alt: "Magic Match Game",
+            web: "https://magicmatch-383b2.firebaseapp.com/"
         }
     ]
 
@@ -38,12 +42,12 @@ const Portfolio = () => {
            
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {
-                portfolios.map(({id, src, alt}) => (
+                portfolios.map(({id, src, alt, web}) => (
                     <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                         <img src={src} alt={alt} className="w-1/2 mx-auto rounded-md duration-200 hover:scale-105" />
                         <div className="flex items-center justify-center">
-                            <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-                            <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
+                            <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"><a href={web} target="_blank" rel="noreferrer">Demo</a></button>
+                            {/* <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button> */}
                         </div>
                     </div>
                 ))
