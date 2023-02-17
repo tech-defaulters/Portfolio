@@ -1,6 +1,6 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-// import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
 
 const SocialLinks = () => {
@@ -10,10 +10,10 @@ const SocialLinks = () => {
             id: 1,
             child: (
                 <>
-                    Linkedin <FaLinkedin size={30} />
+                    Instagram <BsInstagram size={30} />
                 </>
             ),
-            href: "https://linkedin.com",
+            href: "https://www.instagram.com/tech_defaulters/",
             style: "rounded-tr-md"
         },
         {
