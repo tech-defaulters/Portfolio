@@ -10,7 +10,7 @@ const Portfolio = () => {
             id: 1,
             src: gym,
             alt: "Gym Website",
-            web: "https://hootingsailor.github.io/gym-website/"
+            web: "https://tech-defaulters.github.io/Gym/"
         },
         {
             id: 2,
